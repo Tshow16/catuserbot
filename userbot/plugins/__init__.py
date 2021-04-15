@@ -16,12 +16,12 @@ from ..helpers import _cattools, _catutils, _format
 
 # =================== CONSTANT ===================
 
-USERID = Config.OWNER_ID or bot.uid
+USERID = bot.uid if Config.OWNER_ID == 0 else Config.OWNER_ID
 ALIVE_NAME = Config.ALIVE_NAME
 AUTONAME = Config.AUTONAME
 DEFAULT_BIO = Config.DEFAULT_BIO
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "cat"
-BOT_USERNAME = Config.TG_BOT_USER_NAME_BF_HER
+BOT_USERNAME = Config.TG_BOT_USERNAME
 # mention user
 mention = f"[{DEFAULTUSER}](tg://user?id={USERID})"
 hmention = f"<a href = tg://user?id={USERID}>{DEFAULTUSER}</a>"
@@ -38,7 +38,7 @@ PM_START = []
 PMMESSAGE_CACHE = {}
 PMMENU = "pmpermit_menu" not in Config.NO_LOAD
 
-if Config.PRIVATE_GROUP_BOT_API_ID is None:
+if Config.PRIVATE_GROUP_BOT_API_ID == 0:
     BOTLOG = False
     BOTLOG_CHATID = "me"
 else:
