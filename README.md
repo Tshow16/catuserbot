@@ -18,6 +18,10 @@ A simple Telegram userbot based on Telethon .
 
 
 ## How to deploy catuserbot
+### Heroku Deploy
+  - [Source Code](https://github.com/Mr-confused/catpack)
+  - [![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FMr-confused%2Fcatpack&template=https%3A%2F%2Fgithub.com%2FMr-confused%2Fcatpack)
+
 ### Self host
   - [check this](https://catuserbot.gitbook.io/catuserbot/tutorial/self-host)
   
@@ -52,6 +56,6 @@ Thanks for using our bot 😺
 ```
 
 ## Credits
-   - Special thanks to [LonamiWebs](https://github.com/LonamiWebs/Telethon/) for Telethon libraray
+   - Special thanks to [LonamiWebs](https://github.com/LonamiWebs/Telethon/) for Telethon library.
    - To all devs of these [Userbots](https://github.com/sandy1709/catuserbot/tree/bugs#inspiration)
    - Finally to all [contributors of Catuserbot](https://github.com/sandy1709/catuserbot/graphs/contributors)
